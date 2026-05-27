@@ -2,5 +2,8 @@
 builder = "nixpacks"
 buildCommand = "bun install && cd frontend && bun install && bun run build"
 
+[build.nixpacks]
+providers = ["bun"]
+
 [deploy]
 startCommand = "bun run start"
